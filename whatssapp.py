@@ -10,8 +10,8 @@ driver = webdriver.Chrome('/home/vamsi/Downloads/chromedriver')
 driver.maximize_window()
 driver.get("https://web.whatsapp.com/")
 wait = WebDriverWait(driver, 600)
-target = '"Arakonam Vignesh"'
-string = 'Dai saama semma loosu da nee'
+target = '"Contact Name / Group Name"'
+string = 'Message to be sent'
 x_arg = '//span[contains(@title,' + target + ')]'
 group_title = wait.until(EC.presence_of_element_located((
 By.XPATH, x_arg)))
